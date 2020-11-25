@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700');
+
+@font-face {
+    font-family: "Silka";
+    src: url(Silka-Bold.otf);
+}
+
+body {
+    font-family: Silka;
+    font-size: 16px;
+    line-height: .5;
+
+
+    background-color: white;
+    color: #2061EB;
+    overflow: hidden;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 15px;
+    width: auto;
+    height: auto;
+    padding: 120px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.images {
+    max-width: 1600px;
+
+}
+
+.logo {
+    position: static;
+    margin: 52px 0 52px 0;
+}
+
+h1 {
+    font-family: Silka;
+    font-size: 9vw;
+    font-weight: 700;
+    animation: fade .5s ease-in;
+    margin: 60px auto;
+}
+
+h2 {
+    font-size: 4vw;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #4199FF;
+    line-height: 1.4;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5em;
+    margin: 32px 0 0 0;
+    color: #4199FF;
+}
+
+
+img {
+    position: absolute;
+    z-index: -1;
+}
+
+.circle {
+    left: -5%;
+    right: 85%;
+    top: -12%;
+    bottom: 80%;
+}
+
+.bucket {
+    right: -8%;
+    top: 55%;
+    bottom: -12%;
+}
+
+.bitcoin {
+    left: 79.93%;
+    right: 8.4%;
+    top: 30%;
+    bottom: 58.08%;
+    z-index: 10;
+}
+
+.sparkle {
+    left: 5%;
+    right: 87.91%;
+    top: 20%;
+    bottom: 68.98%;
+}
+
+.blue-circle {
+    left: 91.74%;
+    right: 5.53%;
+    top: 15.56%;
+    bottom: 80.06%;
+}
+
+.coin {
+    left: -7.71%;
+    right: 84.09%;
+    top: 80.11%;
+    bottom: -17.52%;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #2061EB;
+    color: white;
+    padding: 20px 80px;
+    border-radius: 4px;
+    font-size: 18px;
+    margin: 32px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    body {
+        font-size: 16px;
+    }
+
+    .bitcoin {
+        left: 85%;
+        right: 8.4%;
+        top: 30%;
+        bottom: 58.08%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        font-size: 16px;
+        justify-content: start;
+    }
+
+    .info {
+        box-shadow: none;
+        padding: 0;
+        width: 90%;
+    }
+
+    .logo {
+        margin: 40px 0 180px 0
+    }
+
+    h1 {
+        font-size: 12vw;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+
+    .images {
+        display: none;
+    }
+}
